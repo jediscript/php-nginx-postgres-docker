@@ -1,24 +1,28 @@
 # Dockerized Lumen-nginX-PostgreSQL
 
-> **Note:** This is for local development use only. To use this in Production, please consult with our DevOps team
+> **Note:** This is for local development use only. To use this in a production environment, please consult with our DevOps team.
 
 ### Requirements
 
-1. Install Docker
-2. Install Docker Compose
+1. Install [Docker](https://www.docker.com/community-edition)
+2. Install [Docker Compose](https://docs.docker.com/compose/)
 
 ### How-to
 
-1. Copy all your lumen application files inside `lumen` directory
-2. Run `docker-compose up -d` in root directory of this. Where `docker-compose.yml` is located
-3. See `http://localhost:8080` to check if your application is running.
+1. Copy all your lumen application files to `/lumen` directory
+2. Run `docker-compose up -d` in the root directory. Where `docker-compose.yml` is located
+3. Access [localhost](http://localhost:8080) in your browser to see if your Lumen app is running.
+
+> **Tip:** create a fresh Lumen app using instructions [here](https://lumen.laravel.com/docs/5.6#installing-lumen) for new projects
 
 ### Contributing
 
-Contribution is always welcome. This is an ongoing improvement local development setup.
+Contribution is always welcome. This is an ongoing improvement for local PHP/Lumen development setup.
 
-Please submit a PR. Thank you.
+Please submit a pull request for your contribution. Thank you.
 
-### Notes
+### Note
 
-This is running PHP 7.2 - FPM. See `/image/php/Dockerfile` for more details of the PHP web server.
+- This is running PHP 7.2 - FPM. See `/image/php/Dockerfile` for more details of the PHP web server.
+
+- Tested to work on Lumen v5.6
