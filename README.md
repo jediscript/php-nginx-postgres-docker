@@ -1,4 +1,4 @@
-# Dockerized Lumen-nginX-PostgreSQL
+# Dockerized Lumen/PHP development
 
 > **Note:** This is for local development use only. To use this in a production environment, please consult with our DevOps team.
 
@@ -14,6 +14,10 @@
 3. Access [localhost](http://localhost:8080) in your browser to see if your Lumen app is running.
 
 > **Tip:** create a fresh Lumen app using instructions [here](https://lumen.laravel.com/docs/5.6#installing-lumen) for new projects
+
+### Database Management
+- Using [Adminer](https://www.adminer.org/) as a tool to manage the PostgreSQL database
+- Use the default credentials (can be changed) found in `./docker-compose.yml` to connect
 
 ### Contributing
 
